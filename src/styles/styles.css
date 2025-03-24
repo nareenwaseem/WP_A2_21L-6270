@@ -1,0 +1,375 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Data Entry Page Styles */
+.data-entry {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.3);
+    text-align: center;
+}
+
+.data-entry h2 {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.data-entry input,
+.data-entry textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background: #121212;
+    color: white;
+    font-size: 16px;
+}
+
+.data-entry textarea {
+    height: 100px;
+    resize: none;
+}
+
+.data-entry input:focus,
+.data-entry textarea:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.data-entry button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.data-entry button:hover {
+    background: #0056b3;
+}
+
+/* Social Media Input Fields */
+.data-entry div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.data-entry div input {
+    flex: 1;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .data-entry {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .data-entry div {
+        flex-direction: column;
+    }
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #1e1e1e;
+    border-bottom: 2px solid #007bff;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    color: #003f83;
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    color: #ffffff;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #007bff;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: white;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+    color: white;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background: #1e1e1e;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #007bff;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #007bff;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 16px;
+    background: #007bff;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+#projects {
+    text-align: center;
+    padding: 60px 20px;
+    background: #121212;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    border: 2px solid #007bff;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #007bff;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.project-card a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 60px 20px;
+    background: #1e1e1e;
+}
+
+#contact h2 {
+    font-size: 28px;
+    color: #007bff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background: #121212;
+    color: white;
+}
+
+form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e1e1e;
+    color: white;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode Toggle */
+.dark-mode {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+.dark-mode .navbar, 
+.dark-mode .about, 
+.dark-mode #projects, 
+.dark-mode #contact, 
+.dark-mode footer {
+    background: #f8f9fa;
+    color: #121212;
+}
+
+.dark-mode .cta-button {
+    background: #007bff;
+    color: white;
+}
+
+.dark-mode .project-card {
+    background: white;
+    border: 2px solid #007bff;
+}
+
+.dark-mode .project-card p {
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #1e1e1e;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
